@@ -23,6 +23,95 @@
         .topic-card img {width: 100%;border-radius: 10px;}
         .faq, .how-it-works {padding: 50px;text-align: center;}
         footer {text-align: center;padding: 20px;background: rgba(0, 0, 0, 0.7);}
+        {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #e0f0ff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .content p {
+            font-size: 1em;
+            color: #333;
+        }
+        .content p strong {
+            color: #000;
+        }
+        .faq {
+            margin-top: 20px;
+        }
+        .faq h2 {
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 10px 0;
+            background-color: #e0f7fa;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .faq h2:hover {
+            background-color: #b2ebf2;
+        }
+{
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .contact-info div {
+            width: 45%;
+        }
+        .contact-info h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .map {
+            width: 100%;
+            height: auto;
     </style>
 </head>
 <body>
@@ -61,5 +150,67 @@
             </div>
         </div>
     </section>
+
+    <!--Percy's code begin-->
+
+    <h1>
+		Frequently Asked
+		<br>
+		Questions
+	</h1>
+
+	<img src="01pic.png" height="300px">
+
+
+<div class="container">
+        <div class="header">
+            <h1>What is Topic Listing?</h1>
+        </div>
+        <div class="content">
+            <p>Topic Listing is a free Bootstrap 5 CSS template. <strong>You are not allowed to redistribute this template</strong> on any other template collection website without our permission. Please contact TemplateMo for more details. Thank you.</p>
+        </div>
+        <div class="faq">
+            <h2 onclick="toggleAnswer(this)">How to find a topic?</h2>
+            <p style="display: none;">You can find a topic by browsing through our categories or using the search function on our website.</p>
+            <h2 onclick="toggleAnswer(this)">Does it need to be paid?</h2>
+            <p style="display: none;">No, the Topic Listing template is free to use. However, redistribution without permission is not allowed.</p>
+        </div>
+    </div>
+    <script>
+        function toggleAnswer(element) {
+            var answer = element.nextElementSibling;
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+
+
+<div class="container">
+        <div class="header">
+            <h1>Get in touch</h1>
+        </div>
+        <div class="contact-info">
+            <div>
+                <img src="02pic.png" alt="Map showing Francisco Park" class="map">
+            </div>
+            <div>
+                <h2>Head office</h2>
+                <p>Bay St & Larkin St, San Francisco, CA 94109, United States</p>
+                <p>Phone: <a href="tel:305-240-9671">305-240-9671</a></p>
+                <p>Email: <a href="mailto:info@company.com">info@company.com</a></p>
+            </div>
+            <div>
+                <h2>Dubai office</h2>
+                <p>Burj Park, Downtown Dubai, United Arab Emirates</p>
+                <p>Phone: <a href="tel:110-220-3400">110-220-3400</a></p>
+                <p>Email: <a href="mailto:info@company.com">info@company.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!--Percy's code end-->
 </body>
 </html>
