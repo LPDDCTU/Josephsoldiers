@@ -1,130 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Topic Listing</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #1e3c72, #2a5298);
-            color: white;
-        }
-        header {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: white;
-            font-size: 16px;
-        }
-        .hero {
-            text-align: center;
-            padding: 50px;
-        }
-        .search-bar {
-            margin-top: 20px;
-        }
-        .search-bar input {
-            padding: 10px;
-            width: 300px;
-            border-radius: 5px;
-            border: none;
-        }
-        .search-bar button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            background-color: #4CAF50;
-            color: white;
-            cursor: pointer;
-        }
-        .topics {
-            text-align: center;
-            padding: 50px;
-        }
-        .topic-cards {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .topic-card {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 20px;
-            border-radius: 10px;
-            width: 200px;
-            text-align: center;
-        }
-        .faq, .how-it-works {
-            padding: 50px;
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="logo">Topic</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Browse Topics</a></li>
-            <li><a href="#">How It Works</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Pages</a></li>
-        </ul>
-    </header>
-    
-    <section class="hero">
-        <h1>Discover. Learn. Enjoy</h1>
-        <p>Platform for creatives around the world</p>
-        <div class="search-bar">
-            <input type="text" placeholder="Design, Code, Marketing, Finance...">
-            <button>Search</button>
+<footer>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; padding: 30px; background: rgba(0, 0, 0, 0.7); color: white;">
+        <div>
+            <h2 style="margin: 0;">Topic</h2>
         </div>
-    </section>
-    
-    <section class="topics">
-        <h2>Browse Topics</h2>
-        <div class="topic-cards">
-            <div class="topic-card">Web Design</div>
-            <div class="topic-card">Graphic</div>
-            <div class="topic-card">Logo Design</div>
+        <div>
+            <h3>Resources</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li><a href="#" style="color: #a7c5eb; text-decoration: none;">Home</a></li>
+                <li><a href="#" style="color: #a7c5eb; text-decoration: none;">How it works</a></li>
+                <li><a href="#" style="color: #a7c5eb; text-decoration: none;">FAQs</a></li>
+                <li><a href="#" style="color: #a7c5eb; text-decoration: none;">Contact</a></li>
+            </ul>
         </div>
-    </section>
-    
-    <section class="how-it-works">
-        <h2>How does it work?</h2>
-        <p>Search, Bookmark & Enjoy</p>
-    </section>
-    
-    <section class="faq">
-        <h2>Frequently Asked Questions</h2>
-    </section>
-    
-    <footer>
-        <p>Copyright &copy; 2024 Topic Listing Center. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+        <div>
+            <h3>Information</h3>
+            <p style="margin: 5px 0; color: #a7c5eb;">305-240-9671</p>
+            <p style="margin: 5px 0;"><a href="mailto:info@company.com" style="color: #a7c5eb; text-decoration: none;">info@company.com</a></p>
+        </div>
+        <div>
+            <button style="padding: 8px 15px; background-color: #4CAF50; border: none; color: white; cursor: pointer; border-radius: 5px;">English ▾</button>
+            <p style="margin-top: 10px; font-size: 14px; color: #a7c5eb;">Copyright © 2048 Topic Listing Center.<br>All rights reserved.</p>
+            <p style="font-size: 14px; color: #a7c5eb;">Design: <a href="#" style="color: #a7c5eb; text-decoration: none;">TemplateMo</a></p>
+        </div>
+    </div>
+</footer>
